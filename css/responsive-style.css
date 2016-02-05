@@ -1,0 +1,580 @@
+/* John Peacock final responsive aloha project */
+
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    color:#2d2d2d;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ 
+/*-------------------------    Custom global settings     ----------------*/
+
+ * {
+    box-sizing: border-box;
+    outline: none;
+ }
+
+html {
+   ont-size: 14px;
+}
+
+.fixed-width-container {
+    margin: 0 auto;
+    padding:2%;
+}
+
+.clearfix:after {      
+    display: block;
+    content: "";
+    clear: both;
+    
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.hide-title {
+    display:none;
+    width:0;
+    height:0;
+}
+
+ /*--- --------------------      fonts          ---------------------*/
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-light-webfont.eot');
+    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff'),
+         url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+         font-weight: light;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-lightitalic-webfont.eot');
+    src: url('../fonts/raleway-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/raleway-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
+         font-weight: light;
+         font-style: italic;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-medium-webfont.eot');
+    src: url('../fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.woff') format('woff'),
+         url('../fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
+         font-weight: medium;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-mediumitalic-webfont.eot');
+    src: url('../fonts/raleway-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-mediumitalic-webfont.woff') format('woff'),
+         url('../fonts/raleway-mediumitalic-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
+         font-weight: medium;
+         font-style: italic;
+}
+
+/*--- --------------------      playfair         ---------------------*/
+
+@font-face {
+    font-family: 'playfair';
+    src: url('../fonts/playfairdisplay-bold-webfont.eot');
+    src: url('../fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-bold-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
+         font-weight: bold;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url('../fonts/playfairdisplay-bolditalic-webfont.eot');
+    src: url('../fonts/playfairdisplay-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay-bolditalic-webfont.svg#playfair_displaybold_italic') format('svg');
+         font-weight: bold;
+         font-style: italic;
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url('../fonts/playfairdisplay-italic-webfont.eot');
+    src: url('../fonts/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-italic-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay-italic-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
+         font-weight: normal;
+         font-style: italic;
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url('../fonts/playfairdisplay-regular-webfont.eot');
+    src: url('../fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+         font-weight: normal;
+         font-style: normal;
+}
+
+h1, h2, h3, {
+    font-family: 'playfair', serif;
+}
+}
+h1 {
+    font-size:5rem;
+}
+
+h2 {
+    font-style: italic;
+    font-size:3rem;
+}
+
+h3 {
+    font-size: 2rem;
+	color: #e2574c;
+    margin: 1rem 1rem;
+}
+
+.strong {
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+ /*--- ---------        Mobile ready css starts here  ---------------*/
+
+
+ /*----------- ------   header section logo and cart button   -------------*/ 
+
+.cart {
+	float: right;
+	width: 100px;
+}
+
+.logo {
+	float: left;
+	width: 220px;
+}
+
+/*----------- ------      top banner section   -------------*/ 
+
+.new-collection {
+    text-transform: uppercase;
+    font-size:1.3rem;
+    margin-bottom:1rem;
+}
+
+.products p {
+    text-transform: uppercase;
+    font-size:1rem;
+    color: #969696;
+}
+
+.top-banner-text h1 {
+    font-size:3rem;
+
+}
+
+.top-banner-text {
+    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+    text-align:center;
+    position:relative;
+    color: #FFFFFF;
+    top: 50%;
+}
+
+.top-banner {
+    background:
+    linear-gradient( to bottom, rgba(255,0,0,.25) 0%, rgba(0,0,0,.25) 100% ),
+    url("../images/banner-girl.png") no-repeat center 60px,
+    url("../images/flower-bkgd.jpg")repeat-x center;
+    background-size: cover, 200px 492px, cover;
+    height:450px;
+}
+
+.about-text p { 
+	font-family:'raleway',sans-serif;
+	font-size: 1.15rem;
+    color:#878787;
+}
+
+.about-section {  
+    border-bottom: solid #d7d7d7 1px;
+}
+
+.about-text {
+    padding: 60px 0 60px 0;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align:center;
+    margin: 0 auto;
+    width: 95%; 
+}
+
+/*   ----------------     featured product section ---------------- */
+
+.products {
+     margin-top: 60px; 
+     text-align:center;
+}
+
+.products p {
+     font-family:'raleway',sans-serif;
+}
+
+.products li {
+    
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* ------------         form section overlaying image        ----------------- */
+
+.cta-form {
+    margin: 2rem auto 0;
+    position: relative;
+    display: block;
+    width: 67%;
+}
+
+.cta-section h2 {   
+     text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+}
+
+.cta-section p { 
+    font-family:'raleway',sans-serif;
+    font-size: 1rem;
+}
+
+
+.cta-section {     
+    color: #FFFFFF;
+    text-align:center;
+	padding-top: 3rem;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	width: 95%;
+    margin: 0 auto;    
+}
+
+input[type="email"] {
+	border-radius: 25px;
+    padding: .5rem 1.75rem;
+    padding-right: 150px;
+    border: 0;
+    width: 100%;
+    font-size:1rem;
+    line-height: 2;
+}
+
+
+input[type="submit"] {
+    padding: .25rem 1.5rem;
+    border-radius: 25px;
+	font-size:1rem;
+    font-weight: bold;
+    position: absolute;
+    background: #e2574c;
+    line-height: 2;
+    right: .25rem;
+    color: white;
+    top: .25rem;
+    border: 0;
+  
+}
+
+.bottom-banner-text {
+    font-family: 'Playfair', serif;
+    text-align:center;
+    position:relative;
+    top: 50%;
+}
+
+.bottom-banner {
+    background:
+    linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+    url("../images/wave-bkgd.jpg") no-repeat center bottom;
+    background-size:cover, 100% cover;
+    background-color: #CCCCCC;
+    margin-top: 40px;
+    height:350px;
+    
+
+}
+
+/*   ----------------     footer with dark background ---------------- */
+
+footer {
+    background-color: #242424;
+    border-top: solid 5px #FFF;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+
+footer a {
+    color:#FFF;
+    text-decoration:none;
+}
+
+footer a:hover {
+    text-decoration:none;
+    color: #b64036;
+
+}
+
+/*   ----------------     copyright, address contact info ---------------- */
+
+.contact-group {
+	font-family: 'playfair', serif;
+	text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+   
+}
+
+.copyright {
+	color: #FFF;
+	margin-bottom: 1rem;
+
+}
+
+.address {
+     color:#999;
+
+}
+
+.contact {
+    color: #FFF;
+    margin-bottom: 1rem;
+}
+/*   ------------------------     social links           ---------------- */
+
+.social {
+	font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #FFF;
+
+}
+
+.social li {
+    display:inline;
+   
+}
+
+.social .social-name {
+    display:none;
+}
+
+.social i {
+    min-width: 40px;
+}
+
+/*------------            for all devices over 600px         --------------- */
+
+@media screen and (min-width: 600px) {
+
+html {
+   font-size: 16px;
+}
+
+.top-banner {
+    background:
+    linear-gradient( to bottom, rgba(255,0,0,.25) 0%, rgba(0,0,0,.25) 100% ),
+    url("../images/banner-girl.png") no-repeat center 60px,
+    url("../images/flower-bkgd.jpg")repeat-x center;
+    background-size: cover, 250px 615px, cover;
+    height:450px;
+}
+
+
+h3 {
+    font-size: 2rem;
+}
+
+.about-section {  
+    border-bottom: solid #d7d7d7 1px;
+}
+
+.about-text {
+    padding: 60px 0 60px 0;
+    text-align:center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 620px; 
+}
+
+.products li {
+    text-align: center;
+    display: inline;
+    float: left;
+    width:50%;
+}
+
+.cart {
+    float: right;
+    width: 60px;
+}
+
+.logo {
+    float: left;
+    width: 180px;
+}
+
+.cta-section {     
+    color: #FFFFFF;
+    text-align:center;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    width: 520px;
+    margin: 0 auto;    
+}
+
+/*   ----------------     600px copyright, address contact info ---------------- */
+
+.contact-group {
+    float:left;
+    text-align:left;
+}
+
+.address {
+     color:#999;
+}
+
+/*   ------------------------     600px social links           ---------------- */
+
+.social {
+    font-family: 'Raleway', sans-serif;
+    padding-right:10%;
+    float:right;
+}
+
+.social .social-name {
+    display:inline-block;
+}
+
+.social i {
+    margin-bottom: 1rem;
+    min-width: 40px;
+}
+
+.social li {
+    display:block;
+    text-align:left;
+}
+
+
+} /* end of 600px media query*/
+
+/*------------            for all devices over 1240px         --------------- */
+
+@media screen and (min-width: 1240px) {
+
+.fixed-width-container { /*  applied to header and footer */
+    max-width:1240px;
+    margin: 0 auto;
+    padding:2%;
+}
+
+.top-banner {
+    background:
+    linear-gradient( to bottom, rgba(255,0,0,.25) 0%, rgba(0,0,0,.25) 100% ),
+    url("../images/banner-girl.png") no-repeat center 60px,
+    url("../images/flower-bkgd.jpg")repeat-x center;
+    background-size: cover, 250px 615px, contain;
+    height:550px;
+}
+
+.about-text {
+    width: 620px; 
+}
+
+.products li {
+    text-align: center;
+    display: inline;
+    float: left;
+    width:25%;
+}
+
+.cta-section {
+    width: 620px;
+}
+
+/*   ------------------------     1240px social links           ---------------- */
+
+.social .social-name {
+    display:inline-block;
+    text-align:left;
+}
+
+} /* end of 1240px media query */
+
+
+
