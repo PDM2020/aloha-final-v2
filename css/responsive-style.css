@@ -11,8 +11,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -23,7 +23,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
- 
+
 /*-------------------------    Custom global settings     ----------------*/
 
  * {
@@ -55,7 +55,7 @@ table {
  }
 
 html {
-   ont-size: 14px;
+   font-size: 14px;
 }
 
 .fixed-width-container {
@@ -63,11 +63,10 @@ html {
     padding:2%;
 }
 
-.clearfix:after {      
+.clearfix:after {
     display: block;
     content: "";
     clear: both;
-    
 }
 
 img {
@@ -91,7 +90,7 @@ img {
          url('../fonts/raleway-light-webfont.woff') format('woff'),
          url('../fonts/raleway-light-webfont.ttf') format('truetype'),
          url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
-         font-weight: light;
+         font-weight: normal;
          font-style: normal;
 }
 
@@ -103,7 +102,7 @@ img {
          url('../fonts/raleway-lightitalic-webfont.woff') format('woff'),
          url('../fonts/raleway-lightitalic-webfont.ttf') format('truetype'),
          url('../fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
-         font-weight: light;
+         font-weight: normal;
          font-style: italic;
 }
 
@@ -115,7 +114,7 @@ img {
          url('../fonts/raleway-medium-webfont.woff') format('woff'),
          url('../fonts/raleway-medium-webfont.ttf') format('truetype'),
          url('../fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
-         font-weight: medium;
+         font-weight: normal;
          font-style: normal;
 }
 
@@ -127,7 +126,7 @@ img {
          url('../fonts/raleway-mediumitalic-webfont.woff') format('woff'),
          url('../fonts/raleway-mediumitalic-webfont.ttf') format('truetype'),
          url('../fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
-         font-weight: medium;
+         font-weight: normal;
          font-style: italic;
 }
 
@@ -181,10 +180,10 @@ img {
          font-style: normal;
 }
 
-h1, h2, h3, {
+h1, h2, h3 {
     font-family: 'playfair', serif;
 }
-}
+
 h1 {
     font-size:5rem;
 }
@@ -209,7 +208,7 @@ h3 {
  /*--- ---------        Mobile ready css starts here  ---------------*/
 
 
- /*----------- ------   header section logo and cart button   -------------*/ 
+ /*----------- ------   header section logo and cart button   -------------*/
 
 .cart {
 	float: right;
@@ -221,7 +220,7 @@ h3 {
 	width: 220px;
 }
 
-/*----------- ------      top banner section   -------------*/ 
+/*----------- ------      top banner section   -------------*/
 
 .new-collection {
     text-transform: uppercase;
@@ -237,7 +236,6 @@ h3 {
 
 .top-banner-text h1 {
     font-size:3rem;
-
 }
 
 .top-banner-text {
@@ -257,13 +255,13 @@ h3 {
     height:450px;
 }
 
-.about-text p { 
+.about-text p {
 	font-family:'raleway',sans-serif;
 	font-size: 1.15rem;
     color:#878787;
 }
 
-.about-section {  
+.about-section {
     border-bottom: solid #d7d7d7 1px;
 }
 
@@ -273,13 +271,13 @@ h3 {
     line-height: 1.5;
     text-align:center;
     margin: 0 auto;
-    width: 95%; 
+    width: 95%;
 }
 
 /*   ----------------     featured product section ---------------- */
 
 .products {
-     margin-top: 60px; 
+     margin-top: 60px;
      text-align:center;
 }
 
@@ -288,7 +286,7 @@ h3 {
 }
 
 .products li {
-    
+
     margin: 20px auto;
     text-align: center;
 }
@@ -302,28 +300,27 @@ h3 {
     width: 67%;
 }
 
-.cta-section h2 {   
+.cta-section h2 {
      text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
 }
 
-.cta-section p { 
+.cta-section p {
     font-family:'raleway',sans-serif;
     font-size: 1rem;
 }
 
-
-.cta-section {     
+.cta-section {
     color: #FFFFFF;
     text-align:center;
-	padding-top: 3rem;
-	font-size: 1.5rem;
-	line-height: 1.5;
-	width: 95%;
-    margin: 0 auto;    
+		padding-top: 3rem;
+		font-size: 1.5rem;
+		line-height: 1.5;
+		width: 95%;
+    margin: 0 auto;
 }
 
 input[type="email"] {
-	border-radius: 25px;
+		border-radius: 25px;
     padding: .5rem 1.75rem;
     padding-right: 150px;
     border: 0;
@@ -336,7 +333,7 @@ input[type="email"] {
 input[type="submit"] {
     padding: .25rem 1.5rem;
     border-radius: 25px;
-	font-size:1rem;
+		font-size:1rem;
     font-weight: bold;
     position: absolute;
     background: #e2574c;
@@ -345,7 +342,7 @@ input[type="submit"] {
     color: white;
     top: .25rem;
     border: 0;
-  
+
 }
 
 .bottom-banner-text {
@@ -359,12 +356,10 @@ input[type="submit"] {
     background:
     linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
     url("../images/wave-bkgd.jpg") no-repeat center bottom;
-    background-size:cover, 100% cover;
+    background-size:100%, cover;
     background-color: #CCCCCC;
     margin-top: 40px;
     height:350px;
-    
-
 }
 
 /*   ----------------     footer with dark background ---------------- */
@@ -385,7 +380,6 @@ footer a {
 footer a:hover {
     text-decoration:none;
     color: #b64036;
-
 }
 
 /*   ----------------     copyright, address contact info ---------------- */
@@ -395,18 +389,15 @@ footer a:hover {
 	text-align: center;
     margin-bottom: 20px;
     line-height: 1.5;
-   
 }
 
 .copyright {
 	color: #FFF;
 	margin-bottom: 1rem;
-
 }
 
 .address {
      color:#999;
-
 }
 
 .contact {
@@ -419,12 +410,10 @@ footer a:hover {
 	font-family: 'Raleway', sans-serif;
     text-align: center;
     color: #FFF;
-
 }
 
 .social li {
     display:inline;
-   
 }
 
 .social .social-name {
@@ -457,7 +446,7 @@ h3 {
     font-size: 2rem;
 }
 
-.about-section {  
+.about-section {
     border-bottom: solid #d7d7d7 1px;
 }
 
@@ -467,7 +456,7 @@ h3 {
     font-size: 1.5rem;
     line-height: 1.5;
     margin: 0 auto;
-    width: 620px; 
+    width: 620px;
 }
 
 .products li {
@@ -487,14 +476,14 @@ h3 {
     width: 180px;
 }
 
-.cta-section {     
+.cta-section {
     color: #FFFFFF;
     text-align:center;
     padding-top: 3rem;
     font-size: 1.5rem;
     line-height: 1.5;
     width: 520px;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 
 /*   ----------------     600px copyright, address contact info ---------------- */
@@ -553,7 +542,7 @@ h3 {
 }
 
 .about-text {
-    width: 620px; 
+    width: 620px;
 }
 
 .products li {
@@ -575,6 +564,3 @@ h3 {
 }
 
 } /* end of 1240px media query */
-
-
-
